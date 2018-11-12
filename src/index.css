@@ -8,7 +8,6 @@ h3 {
 p {
   font-family: Helvetica, sans-serif;
   margin-left: 10px;
-  /* margin-right: 10px; */
 }
 
 #qwer {
@@ -45,8 +44,14 @@ p {
 }
 
 /*** Tables container ***/
-.tables-container {
-  /* Guess I don't need this? */  
+.tables-container {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+  flex-wrap: wrap; 
+  
 }
 
 /*** ProdTable style ***/
@@ -57,15 +62,13 @@ p {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: start;
-  /* border: 1px solid black; */
 }
 
 /*** CompTable style ***/
 /* Inherits ProdTable style */
 #comp-table {  
   height: 250px;
-  /* border: 1px solid black; */
-  justify-content: start;
+  justify-content: flex-start;
   /* align-self: flex-start; */
 }
 
@@ -73,14 +76,12 @@ p {
   margin-right: 10px;
 }
 
-
-
 /** Product and Button styles **/
-
 .product-container {
   margin: 5px;
   width: 250px;
-  flex-direction: column;
+  /* flex-direction: column; */
+  align-self: center;
   border: 1px solid black;  
 }
 
